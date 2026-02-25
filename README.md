@@ -26,3 +26,12 @@ Insight: Retention peaks in Month 1 but drops by 40% by Month 3.
 Recommendation: Implement a "Win-back" email sequence for customers who haven't purchased in 60 days.
 
 Risk: 70% of revenue comes from the top 10% of customers, indicating a high dependency on "Whale" buyers.
+
+🛠 Data Integrity Audit
+Before analysis, the raw dataset contained 541,909 records. After performing a data audit, I identified three main issues:
+
+Missing Identity: 24% of rows lacked a Customer ID. These were excluded from the retention study but kept for gross revenue snapshots.
+
+Transactional Anomalies: 10,000+ rows contained negative quantities (returns). I moved these to a separate returns table to analyze churn.
+
+Final Scope: The cleaned dataset for the RFM model consists of 406,829 high-integrity rows.
