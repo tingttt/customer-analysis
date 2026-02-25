@@ -43,6 +43,7 @@ I transformed raw transactional data into actionable business intelligence by ca
    - Removed Nulls: Excluded transactions without a Customer ID as they cannot be tracked for retention.
    - Handled Returns: Identified and isolated negative quantities (returns) to avoid overstating gross revenue.
    - Type Casting: Converted InvoiceDate from text to TIMESTAMP for time-series analysis.
+   - Clean table 805,531 rows
 
 ## 📊 Key Business Questions Answered
 - Retention: What percentage of customers return after their first month?
